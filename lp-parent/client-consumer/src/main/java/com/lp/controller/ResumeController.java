@@ -20,7 +20,7 @@ public class ResumeController {
     public String contact(LpContact lpContact){
         int ins = this.resumeFeign.contact(lpContact);
         if (ins == 1){
-            return "redirect:/home";
+            return "redirect:/succeed/200";
         }else {
             return "redirect:/error/500";
         }

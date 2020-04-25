@@ -6,16 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="seckill-generator-config" />
-        <module name="lp-generator-config" />
         <module name="config-server" />
-        <module name="seckill-pojo" />
-        <module name="lp-commons" />
-        <module name="resume-producer" />
-        <module name="seckill-client-consumer" />
-        <module name="client-consumer" />
-        <module name="lp-pojo" />
         <module name="redis-ha" />
+        <module name="seckill-order-producer" />
+        <module name="lp-generator-config" />
+        <module name="lp-pojo" />
+        <module name="lp-commons" />
+        <module name="seckill-generator-config" />
+        <module name="seckill-goods-producer" />
+        <module name="resume-producer" />
+        <module name="seckill-message-producer" />
+        <module name="seckill-rabbitmq-consumer" />
+        <module name="seckill-account-producer" />
+        <module name="client-consumer" />
+        <module name="seckill-pojo" />
+        <module name="seckill-client-consumer" />
         <module name="seckill-commons" />
       </profile>
     </annotationProcessing>
@@ -35,11 +40,16 @@
       <module name="redis-ha" options="-parameters" />
       <module name="resume-parent" options="-parameters" />
       <module name="resume-producer" options="-parameters" />
+      <module name="seckill-account-producer" options="-parameters" />
       <module name="seckill-client-consumer" options="-parameters" />
       <module name="seckill-commons" options="-parameters" />
       <module name="seckill-generator-config" options="-parameters" />
+      <module name="seckill-goods-producer" options="-parameters" />
+      <module name="seckill-message-producer" options="-parameters" />
+      <module name="seckill-order-producer" options="-parameters" />
       <module name="seckill-parent" options="-parameters" />
       <module name="seckill-pojo" options="-parameters" />
+      <module name="seckill-rabbitmq-consumer" options="-parameters" />
     </option>
   </component>
 </project>

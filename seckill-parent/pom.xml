@@ -13,6 +13,11 @@
     <module>seckill-commons</module>
     <module>seckill-pojo</module>
     <module>seckill-generator-config</module>
+      <module>seckill-account-producer</module>
+    <module>seckill-goods-producer</module>
+    <module>seckill-message-producer</module>
+    <module>seckill-order-producer</module>
+    <module>seckill-rabbitmq-consumer</module>
   </modules>
 
   <name>Maven</name>

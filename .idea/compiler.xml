@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="seckill-generator-config" />
+        <module name="lp-generator-config" />
+        <module name="config-server" />
+        <module name="seckill-pojo" />
+        <module name="lp-commons" />
+        <module name="resume-producer" />
+        <module name="seckill-client-consumer" />
+        <module name="client-consumer" />
+        <module name="lp-pojo" />
+        <module name="redis-ha" />
+        <module name="seckill-commons" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lp-producer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client-consumer" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="lp-commons" options="-parameters" />
+      <module name="lp-generator-config" options="-parameters" />
+      <module name="lp-parent" options="-parameters" />
+      <module name="lp-pojo" options="-parameters" />
+      <module name="lp-producer" options="-parameters" />
+      <module name="redis-ha" options="-parameters" />
+      <module name="resume-parent" options="-parameters" />
+      <module name="resume-producer" options="-parameters" />
+      <module name="seckill-client-consumer" options="-parameters" />
+      <module name="seckill-commons" options="-parameters" />
+      <module name="seckill-generator-config" options="-parameters" />
+      <module name="seckill-parent" options="-parameters" />
+      <module name="seckill-pojo" options="-parameters" />
+    </option>
+  </component>
+</project>

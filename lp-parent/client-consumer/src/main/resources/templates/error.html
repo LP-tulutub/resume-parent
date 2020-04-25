@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Certy</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <!-- Icon Fonts -->
+    <link th:href="@{/assets/fonts/icomoon/style.css}" rel="stylesheet">
+    <!-- Styles -->
+    <link th:href="@{/assets/css/plugins.min.css}" rel="stylesheet">
+    <link th:href="@{/assets/css/style.min.css}" rel="stylesheet">
+    <!-- Modernizer -->
+    <script type="text/javascript" th:src="@{/assets/js/vendor/modernizr-3.3.1.min.js}"></script>
+    <script></script>
+</head>
+
+<body class="">
+<div class="crt-wrapper">
+    <header id="crt-header">
+        <div class="crt-head-inner crt-container">
+            <div class="crt-container-sm">
+                <div class="crt-head-row">
+                    <div id="crt-head-col1" class="crt-head-col text-left">
+                        <a id="crt-logo" class="crt-logo" href="index.html">
+                            <img th:src="@{/assets/images/uploads/brand/logo.svg}" alt="certy resume">
+                            <span>.Certy</span></a>
+                    </div>
+                    <div id="crt-head-col2" class="crt-head-col text-right">
+                        <div class="crt-nav-container crt-container hidden-sm hidden-xs">
+                            <nav id="crt-main-nav">
+                                <ul class="clear-list">
+                                    <li>
+                                        <a href="/home">home</a></li>
+                                    <li>
+                                        <a href="technology.html">Technology</a>
+                                    <li class="has-sub-menu">
+                                        <a href="#">pages</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="typography.html">typography</a></li>
+                                            <li>
+                                                <a href="components.html">components</a></li>
+                                            <li>
+                                                <a href="search.html">search</a></li>
+                                            <li>
+                                                <a href="404.html">404</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-sub-menu">
+                                        <a href="category.html">blog</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="single.html">single</a></li>
+                                            <li>
+                                                <a href="single-image.html">single image</a></li>
+                                            <li>
+                                                <a href="single-slider.html">single slider</a></li>
+                                            <li>
+                                                <a href="single-youtube.html">single youtube</a></li>
+                                            <li>
+                                                <a href="single-vimeo.html">single vimeo</a></li>
+                                            <li>
+                                                <a href="single-dailymotion.html">single dailymotion</a></li>
+                                            <li>
+                                                <a href="single-soundcloud.html">single soundcloud</a></li>
+                                            <li>
+                                                <a href="single-video.html">single video</a></li>
+                                            <li>
+                                                <a href="single-audio.html">single audio</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="crt-head-col3" class="crt-head-col text-right">
+                        <button id="crt-sidebar-btn" class="btn btn-icon btn-shade">
+                            <span class="crt-icon crt-icon-side-bar-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <</header>
+    <div id="crt-container" class="crt-container">
+        <div id="crt-side-box-wrap" class="crt-sticky">
+            <div id="crt-side-box">
+                <div class="crt-side-box-item">
+                    <div class="crt-card bg-primary text-center">
+                        <div class="crt-card-avatar">
+                            <img class="avatar avatar-195" src="#" srcset="assets/images/uploads/avatar/avatar-390x390-2x.png 2x" width="195" height="195" alt=""></div>
+                        <div class="crt-card-info">
+                            <h2 class="text-upper">null</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .crt-nav-wrap -->
+        <div class="crt-container-sm">
+            <div class="crt-paper-layers">
+                <div class="crt-paper clearfix">
+                    <div class="crt-paper-cont paper-padd clear-mrg">
+                        <div class="padd-box-sm">
+                            <!--404-->
+                            <div class="text-center" th:if="${code} == 404">
+                                <strong class="title-404 text-upper">404</strong>
+                                <span class="info-404">the Error:
+                      <br>page doesn't exist</span>
+                                <a class="btn btn-primary" href="/home">Go Home</a>
+                            </div>
+                            <!--500-->
+                            <div class="text-center" th:if="${code} == 500">
+                                <strong class="title-404 text-upper">500</strong>
+                                <span class="info-404">the Error:
+                      <br>Internal Server Error</span>
+                                <a class="btn btn-primary" href="/home">Go Home</a>
+                            </div>
+                            <!--503-->
+                            <div class="text-center" th:if="${code} == 503">
+                                <strong class="title-404 text-upper">503</strong>
+                                <span class="info-404">the Error:
+                      <br>Service Unavailable</span>
+                                <a class="btn btn-primary" href="/home">Go Home</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- #crt-sidebar -->
+    <footer id="crt-footer" class="crt-container-lg">
+        <div class="crt-container">
+            <div class="crt-container-sm clear-mrg text-center">
+                <p>LP @ All Rights Reserved 2020</p>
+            </div>
+        </div>
+        <!-- .crt-container --></footer>
+    <!-- #crt-footer -->
+    <svg id="crt-bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
+        <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71" /></svg>
+    <svg id="crt-bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
+        <polygon points="0,0,633,0,633,536" /></svg>
+</div>
+<!-- .crt-wrapper -->
+<!-- Scripts -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyDiwY_5J2Bkv2UgSeJa4NOKl6WUezSS9XA"></script>
+<script type="text/javascript" src="assets/js/plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/theme.min.js"></script>
+</body>
+
+</html>

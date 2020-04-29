@@ -15,7 +15,7 @@ clusterServersConfig:
   # 执行失败最大次数
   failedAttempts: 3
   # 密码
-  password:
+  password: 2keIr3TI6o2keIr3TI6o2keIr3TI6o2keIr3TI6o
   # 单个连接最大订阅数量
   subscriptionsPerConnection: 5
   clientName: null
@@ -39,12 +39,12 @@ clusterServersConfig:
   readMode: SLAVE
   # 集群地址
   nodeAddresses:
-    - "redis://192.168.1.10:7001"
-    - "redis://192.168.1.10:7002"
-    - "redis://192.168.1.10:7003"
-    - "redis://192.168.1.10:7004"
-    - "redis://192.168.1.10:7005"
-    - "redis://192.168.1.10:7006"
+    - "redis://104.168.102.123:7001"
+    - "redis://104.168.102.123:7002"
+    - "redis://104.168.102.123:7003"
+    - "redis://104.168.102.123:7004"
+    - "redis://104.168.102.123:7005"
+    - "redis://104.168.102.123:7006"
   # 对Redis集群节点状态扫描的时间间隔。单位是毫秒。默认1000
   scanInterval: 1000
   #这个线程池数量被所有RTopic对象监听器，RRemoteService调用者和RExecutorService任务共同共享。默认2

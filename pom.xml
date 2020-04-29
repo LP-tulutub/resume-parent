@@ -13,6 +13,7 @@
     <module>redis-ha</module>
     <module>config-server</module>
       <module>seckill-parent</module>
+      <module>eureka-server</module>
   </modules>
 
   <name>Maven</name>

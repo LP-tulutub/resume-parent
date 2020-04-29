@@ -17,6 +17,7 @@
         <module name="resume-producer" />
         <module name="seckill-message-producer" />
         <module name="seckill-rabbitmq-consumer" />
+        <module name="eureka-server" />
         <module name="seckill-account-producer" />
         <module name="client-consumer" />
         <module name="seckill-pojo" />
@@ -32,6 +33,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="client-consumer" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="lp-commons" options="-parameters" />
       <module name="lp-generator-config" options="-parameters" />
       <module name="lp-parent" options="-parameters" />

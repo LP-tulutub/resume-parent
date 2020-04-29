@@ -17,6 +17,7 @@
         <module name="resume-producer" />
         <module name="seckill-message-producer" />
         <module name="seckill-rabbitmq-consumer" />
+        <module name="eureka-server" />
         <module name="seckill-account-producer" />
         <module name="client-consumer" />
         <module name="seckill-pojo" />
@@ -25,7 +26,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="eureka-server" target="1.8" />
       <module name="lp-producer" target="1.8" />
     </bytecodeTargetLevel>
   </component>

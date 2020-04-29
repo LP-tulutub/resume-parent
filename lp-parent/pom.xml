@@ -14,6 +14,7 @@
       <module>lp-pojo</module>
       <module>lp-generator-config</module>
     <module>resume-producer</module>
+    <module>lp-mapper</module>
   </modules>
 
   <name>Maven</name>

@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="redis-ha" />
+        <module name="geteway-zuul" />
         <module name="seckill-order-producer" />
         <module name="lp-generator-config" />
         <module name="lp-pojo" />
         <module name="lp-commons" />
         <module name="seckill-generator-config" />
         <module name="seckill-goods-producer" />
+        <module name="lp-mapper" />
         <module name="resume-producer" />
         <module name="seckill-message-producer" />
         <module name="seckill-rabbitmq-consumer" />
@@ -34,8 +36,10 @@
       <module name="client-consumer" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="geteway-zuul" options="-parameters" />
       <module name="lp-commons" options="-parameters" />
       <module name="lp-generator-config" options="-parameters" />
+      <module name="lp-mapper" options="-parameters" />
       <module name="lp-parent" options="-parameters" />
       <module name="lp-pojo" options="-parameters" />
       <module name="lp-producer" options="-parameters" />

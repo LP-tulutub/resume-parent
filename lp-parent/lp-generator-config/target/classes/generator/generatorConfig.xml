@@ -17,9 +17,9 @@
 		</commentGenerator>
 		<!--数据库链接URL，用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-						connectionURL="jdbc:mysql://192.168.1.22:8066/lp"
-						userId="lp"
-						password="lp">
+						connectionURL="jdbc:mysql://104.168.102.123:3306/lp"
+						userId="root"
+						password="2keIr3TI6o2keIr3TI6o2keIr3TI6o2keIr3TI6o">
 		</jdbcConnection>
 		<!-- 类型转换 -->
 		<javaTypeResolver >

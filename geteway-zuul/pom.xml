@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.lp</groupId>
-  <artifactId>client-consumer</artifactId>
+  <artifactId>geteway-zuul</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>client-consumer</name>
+  <name>geteway-zuul</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,7 +16,7 @@
 
   <parent>
     <groupId>com.lp</groupId>
-    <artifactId>lp-parent</artifactId>
+    <artifactId>resume-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
@@ -24,16 +24,16 @@
     <!-- 依赖 -->
     <dependency>
       <groupId>com.lp</groupId>
-      <artifactId>lp-commons</artifactId>
+      <artifactId>redis-ha</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
-    <dependency>
-      <groupId>com.lp</groupId>
-        <artifactId>redis-ha</artifactId>
-        <version>1.0-SNAPSHOT</version>
-     </dependency>
 
-     <!-- client生产者消费者 -->
+    <!-- ConfigClient读取配置文件 -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
+    <!-- client生产者消费者 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -43,31 +43,10 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
-    <!-- ConfigClient读取配置文件 -->
+    <!-- zuul代理 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-config</artifactId>
-    </dependency>
-    <!-- openfeign快速使用生产者 -->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-openfeign</artifactId>
-    </dependency>
-    <!-- hystrix连接错误设置 -->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-    </dependency>
-    <!-- thymeleaf启动器的坐标 -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-thymeleaf</artifactId>
-    </dependency>
-    <!-- DevTools的坐标 -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-devtools</artifactId>
-      <optional>true</optional>
+      <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
     </dependency>
 
   </dependencies>
@@ -77,10 +56,9 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-       </plugin>
+      </plugin>
     </plugins>
   </build>
-
 
 
 </project>

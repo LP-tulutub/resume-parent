@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.LinkedHashMap;
 
-@WebFilter(filterName = "RunNO1", urlPatterns = {"/home", "/resume/*", "/succeed/*", "/error/*"})
+@WebFilter(filterName = "RunNO1", urlPatterns = {"/home", "/resume/*", "/succeed/*", "/error/*", "/*.html"})
 public class ReadFilter implements Filter {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;

@@ -41,9 +41,9 @@
                                     <li>
                                         <a href="/home">home</a></li>
                                     <li>
-                                        <a href="technology.html">Technology</a></li>
+                                        <a href="/view/technology.html">Technology</a></li>
                                     <li>
-                                        <a href="contact.html">contact</a></li>
+                                        <a href="/view/contact.html">contact</a></li>
                                     <li class="has-sub-menu">
                                         <a href="#">Test</a>
                                         <ul class="sub-menu">
@@ -95,7 +95,7 @@
                 <div class="crt-side-box-item">
                     <div class="crt-card bg-primary text-center">
                         <div class="crt-card-avatar">
-                            <img class="avatar avatar-195" th:src="@{/my/my.jpg}" srcset="assets/images/uploads/avatar/avatar-390x390-2x.png 2x" width="195" height="195" alt=""></div>
+                            <img class="avatar avatar-195" th:src="@{/my/my.jpg}" srcset="/my/my.jpg 2x" width="195" height="195" alt=""></div>
                         <div class="crt-card-info">
                             <h2 class="text-upper">雷鹏</h2>
                             <p class="text-muted">专业：应用统计学</p>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                     <div class="crt-side-box-btn">
-                        <a class="btn btn-default btn-lg btn-block btn-thin btn-upper" href="http://192.168.1.11/lp.pdf">下载pdf版</a></div>
+                        <a class="btn btn-default btn-lg btn-block btn-thin btn-upper" th:href="@{/my/lpresume.pdf}">下载pdf版</a></div>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                         <div class="padd-box-sm">
                             <!--200-->
                             <div class="text-center" th:if="${code} == 200">
-                                <strong class="title-404 text-upper">200</strong>
+                                <strong class="title-404 text-upper">操作成功！！！</strong>
                                 <span class="info-404">感谢您的建议~</span>
                                 <a class="btn btn-primary" href="/home">Go Home</a>
                             </div>
@@ -149,8 +149,8 @@
 <!-- Scripts -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyDiwY_5J2Bkv2UgSeJa4NOKl6WUezSS9XA"></script>
-<script type="text/javascript" src="assets/js/plugins.min.js"></script>
-<script type="text/javascript" src="assets/js/theme.min.js"></script>
+<script type="text/javascript" th:src="@{/assets/js/plugins.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/js/theme.min.js}"></script>
 </body>
 
 </html>
